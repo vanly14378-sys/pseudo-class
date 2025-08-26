@@ -5,119 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Bai 33 CSS Pseudo-classes hover active</title>
-    <h1>Pseudo-classes (đặc trưng của pseudo luôn có dấu hai chấm : ）</h1>
-    <h3>Định nghĩa  Pseudo-classes (lớp giả)</h3>
-    <h4>
-        <strong>1. Định nghĩa</strong>
-    </h4>
-    <p>
-        Lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.
-
-Ví dụ, nó có thể được sử dụng để:
-    <ol>
-<li>Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó</li>
-<li>Kiểu liên kết đã truy cập và chưa truy cập khác nhau</li>
-<li>Tạo kiểu cho một phần tử khi nó được chú ý</li>
-<li>Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn</li>
-</ol>
+</head>
+<body>
+        <h1>Pseudo-classes (đặc trưng của pseudo luôn có dấu hai chấm : ）</h1>
+        <h3>Định nghĩa  Pseudo-classes (lớp giả)</h3>
+        <h4>
+            <strong>1. Định nghĩa</strong>
+        </h4>
+        <p>
+            Lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.
+    
+    Ví dụ, nó có thể được sử dụng để:
+        <ol>
+    <li>Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó</li>
+    <li>Kiểu liên kết đã truy cập và chưa truy cập khác nhau</li>
+    <li>Tạo kiểu cho một phần tử khi nó được chú ý</li>
+    <li>Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn</li>
+    </ol>
+        </p>
+    <h4><strong>2. Cú pháp của pseudo-class (lớp giả)</strong></h4>
+    <p style="color: blue;">
+        selector:pseudo-class {property: value;}
     </p>
-<h4><strong>2. Cú pháp của pseudo-class (lớp giả)</strong></h4>
-<p style="color: blue;">
-    selector:pseudo-class {property: value;}
-</p>
-<ul style="a">
-<li>:hover ví dụ: p:hover có nghĩa là chọn các thẻ &lt;p&gt; khi di chuột qua</li>
-<li>:active ví dụ: a:active có nghĩa là chọn các thẻ &lt;a&gt; khi nhấn giữ chuột</li>
-<li>:link ví dụ: a:link có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết chưa click vào</li>
-<li>:visited ví dụ: a:visited có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết đã click truy vập</li>
-<li>:empty ví dụ: div:link có nghĩa là chọn các thẻ &lt;div&gt; không có nội dung</li>
-<li>:target ví dụ: #home:target có nghĩa là chọn các thẻ có id="home" khi trên URL có hash tương ứng. VD: htts:// domain.com/#home</li>
-</ul>
-<h4>3. Ví dụ demo:</h4>
-<p>
-    3.1 Lớp giả :hover Di chuột vào nội dung sẽ thấy sự thay đổi
-</p>
-<!-- :hover di chuột đến nội dung -->
-<p class="di_chuot">Xin chào</p>
-<p class="di_chuot">Hãy di chuột qua tôi</p>
-<p>dòng thứ n</p>
-<p>
-    3.2 Lớp giả :active chọn các thẻ &lt;a&gt; khi nhấn giữ chuột sẽ có sự thay đổi <br>
+    <ul style="a">
+    <li>:hover ví dụ: p:hover có nghĩa là chọn các thẻ &lt;p&gt; khi di chuột qua</li>
+    <li>:active ví dụ: a:active có nghĩa là chọn các thẻ &lt;a&gt; khi nhấn giữ chuột</li>
+    <li>:link ví dụ: a:link có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết chưa click vào</li>
+    <li>:visited ví dụ: a:visited có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết đã click truy vập</li>
+    <li>:empty ví dụ: div:link có nghĩa là chọn các thẻ &lt;div&gt; không có nội dung</li>
+    <li>:target ví dụ: #home:target có nghĩa là chọn các thẻ có id="home" khi trên URL có hash tương ứng. VD: htts:// domain.com/#home</li>
+    </ul>
+    <h4>3. Ví dụ demo:</h4>
+    <p>
+        3.1 Lớp giả :hover Di chuột vào nội dung sẽ thấy sự thay đổi
+    </p>
+    <!-- :hover di chuột đến nội dung -->
     <p class="di_chuot">Xin chào</p>
-<p class="di_chuot">Hãy di chuột qua tôi</p>
-<a href="https://chat.deepseek.com/" class="link">Click here</a>
-</p>
-<P>
-    3.3 Lớp giả :link ví dụ như a:link có nghĩa là chọn các thẻ &lt;a&gt; có liên kết chưa click vào <br>
-    <p class="di_chuot">Xin chào</p>
-<p class="di_chuot">Hãy di chuột qua tôi</p>
-<p>dòng thứ n</p>
-<p>dòng thứ n</p>
-<p>dòng thứ n</p>
- 3.4 Lớp giả :visited ví dụ như a:visited có nghĩa là chọn các thẻ &lt;a&gt; có liên kết đã click truy cập<br>
-<a href="https://chat.deepseek.com" class="Click_me" target="_blank"> Test :link</a> <br>
-<a href="https://www.w3schools.com/" class="Click_me" target="_blank"> Test :link 2</a> <br>
-(cách amet gõ nhanh thẻ a có class là class="click_me với tiêu để là Link link như sau: a.click_me{Link link}）
-<br>
-</P>
-<p>3.5 Lớp giả :empty ví dụ như div:empty có nghĩa là chọ các thẻ &lt;div&gt; không có nội dung<br>
-div là 1 thẻ phi hữu nghĩa, dùng để gom nhóm các phần tử html lại với nhau để thuận tiện trong việc quản lí giữa các phần tử. <br>
-Ví dụ: 
-<p class="di_chuot">Hãy di chuột qua tôi</p>
-<p>dòng thứ n</p>
-<p>dòng thứ n</p>
-<p>dòng thứ n</p>
-<div class="div_elm">a</div> 
-</p>
-<p>3.6 Lớp giả :target ví dụ #home:target có nghĩa là chọn thẻ có id="home" khi trên URL có hash (dấu # đại diện cho ID) tương ứng.</p>
-<h1>Nỗ lực phi thường</h1>
-<ul>
-    <li>
-        <a href="#mobai">Chuyển đến mở bài</a>
-    </li>
-    <li>
-        <a href="#thanbai">Chuyển đến thân bài</a>
-    </li>
-    <li>
-        <a href="#ketbai">Chuyển đến kết bài</a>
-    </li>
-</ul>
-<!-- cách gõ nhanh amet h2#mobai{Mở bài} -->
-<h2 id="mobai">Mở bài</h2>
-<p>Lorem, ipsum d cupiditate, impedit perspiciatis eveniet, numquam maxime cum recusandae saepe voluptatibus deserunt provident aspernatur distinctio quis animi soluta architecto cumque, adipisci odit dicta nisi eum ullam. Animi?</p>
-<h2 id="thanbai">Thân bài</h2>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur tempore, laboriosam architecto amet sit, earum atque vero animi totam quasi veritatis accusantium quo. Sint libero repellat quam laudantium eaque asperiores?
-Id douga nemo pariatur ullam itaque voluptatum repellat, est at? Suscipit sit autem praesentium, illo facilis architecto in eius alias, ipsa iusto eligendi veniam quibusdam eaque. Natus.
-Dolor eveniet omnis voluptates, molestias beatae totam quas magnam in, sed voluptas quae excepturi temporibus porro illum ducimus dolorem sequi non, dolore autem. Repellat, consectetur molestiae! Corporis nemo blanditiis quaerat.</p>
-<h2 id="ketbai">Kết bài</h2>
-<p>Lorem, ipsum due ipsam minus illum fuga ratione eaque sed omnis laboriosam ullam quo, aperiam amet harum architecto quos animi odit earum reprehenderit consequatur inventore voluptate dolor eius. Impedit, ex.</p>
-<h4>4. Phần tử con Child selector</h4>
-<p>Cấu trúc cú pháp tạo pseudo-class vẫn là: <br>
-pseudo-class{ <br>
-/* khối lệnh css */ <br>
-}
-</p>
-<p>4.1 Phần tử lớp giả con :first-child ví dụ p:first-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con đầu tiên</p>
-<div>
-    <p>Đoạn văn 1</p>
-    <p>Đoạn văn 2</p>
-    <p>Đoạn văn 3</p>
-</div>
-<div class="demo">
-    <p>Noi dung 1</p>
-    <p>Noi dung 2</p>
-    <p>Noi dung 3</p>
-    <p>Noi dung 4</p>
-</div>
-<!-- lúc này thẻ p bên dưới đứng sau h1 không còn là thẻ p đầu tiên nữa và không có tác dụng -->
-<h1>test p:first-child sau thẻ h1</h1>
-<p>test 1</p>
-<p>test 2</p>
-<p>4.2 Phần tử lớp giả con :last-child ví dụ p:last-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con cuối cùng</p>
-
-<p>4.3 Phần tử lớp giả con :nth-child ví dụ p:nth-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ trên xuống</p>
-<p>4.4 Phần tử lớp giả con :nth-last-child< ví dụ p:nth-last-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ dưới lên/p>
-<p>4.4 Phần tử lớp giả con :only-child ví dụ p:only-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con duy nhất</p>
-
+    <p class="di_chuot">Hãy di chuột qua tôi</p>
+    <p>dòng thứ n</p>
+    <p>
+        3.2 Lớp giả :active chọn các thẻ &lt;a&gt; khi nhấn giữ chuột sẽ có sự thay đổi <br>
+        <p class="di_chuot">Xin chào</p>
+    <p class="di_chuot">Hãy di chuột qua tôi</p>
+    <a href="https://chat.deepseek.com/" class="link">Click here</a>
+    </p>
+    <P>
+        3.3 Lớp giả :link ví dụ như a:link có nghĩa là chọn các thẻ &lt;a&gt; có liên kết chưa click vào <br>
+        <p class="di_chuot">Xin chào</p>
+    <p class="di_chuot">Hãy di chuột qua tôi</p>
+    <p>dòng thứ n</p>
+    <p>dòng thứ n</p>
+    <p>dòng thứ n</p>
+     3.4 Lớp giả :visited ví dụ như a:visited có nghĩa là chọn các thẻ &lt;a&gt; có liên kết đã click truy cập<br>
+    <a href="https://chat.deepseek.com" class="Click_me" target="_blank"> Test :link</a> <br>
+    <a href="https://www.w3schools.com/" class="Click_me" target="_blank"> Test :link 2</a> <br>
+    (cách amet gõ nhanh thẻ a có class là class="click_me với tiêu để là Link link như sau: a.click_me{Link link}）
+    <br>
+    </P>
+    <p>3.5 Lớp giả :empty ví dụ như div:empty có nghĩa là chọ các thẻ &lt;div&gt; không có nội dung<br>
+    div là 1 thẻ phi hữu nghĩa, dùng để gom nhóm các phần tử html lại với nhau để thuận tiện trong việc quản lí giữa các phần tử. <br>
+    Ví dụ: 
+    <p class="di_chuot">Hãy di chuột qua tôi</p>
+    <p>dòng thứ n</p>
+    <p>dòng thứ n</p>
+    <p>dòng thứ n</p>
+    <div class="div_elm">a</div> 
+    </p>
+    <p>3.6 Lớp giả :target ví dụ #home:target có nghĩa là chọn thẻ có id="home" khi trên URL có hash (dấu # đại diện cho ID) tương ứng.</p>
+    <h1>Nỗ lực phi thường</h1>
+    <ul>
+        <li>
+            <a href="#mobai">Chuyển đến mở bài</a>
+        </li>
+        <li>
+            <a href="#thanbai">Chuyển đến thân bài</a>
+        </li>
+        <li>
+            <a href="#ketbai">Chuyển đến kết bài</a>
+        </li>
+    </ul>
+    <!-- cách gõ nhanh amet h2#mobai{Mở bài} -->
+    <h2 id="mobai">Mở bài</h2>
+    <p>Lorem, ipsum d cupiditate, impedit perspiciatis eveniet, numquam maxime cum recusandae saepe voluptatibus deserunt provident aspernatur distinctio quis animi soluta architecto cumque, adipisci odit dicta nisi eum ullam. Animi?</p>
+    <h2 id="thanbai">Thân bài</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur tempore, laboriosam architecto amet sit, earum atque vero animi totam quasi veritatis accusantium quo. Sint libero repellat quam laudantium eaque asperiores?
+    Id douga nemo pariatur ullam itaque voluptatum repellat, est at? Suscipit sit autem praesentium, illo facilis architecto in eius alias, ipsa iusto eligendi veniam quibusdam eaque. Natus.
+    Dolor eveniet omnis voluptates, molestias beatae totam quas magnam in, sed voluptas quae excepturi temporibus porro illum ducimus dolorem sequi non, dolore autem. Repellat, consectetur molestiae! Corporis nemo blanditiis quaerat.</p>
+    <h2 id="ketbai">Kết bài</h2>
+    <p>Lorem, ipsum due ipsam minus illum fuga ratione eaque sed omnis laboriosam ullam quo, aperiam amet harum architecto quos animi odit earum reprehenderit consequatur inventore voluptate dolor eius. Impedit, ex.</p>
+    <h4>4. Phần tử con Child selector</h4>
+    <p>Cấu trúc cú pháp tạo pseudo-class vẫn là: <br>
+    pseudo-class{ <br>
+    /* khối lệnh css */ <br>
+    }
+    </p>
+    <p>4.1 Phần tử lớp giả con :first-child ví dụ p:first-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con đầu tiên</p>
+    <div>
+        <p>Đoạn văn 1</p>
+        <p>Đoạn văn 2</p>
+        <p>Đoạn văn 3</p>
+    </div>
+    <div class="demo">
+        <p>Noi dung 1</p>
+        <p>Noi dung 2</p>
+        <p>Noi dung 3</p>
+        <p>Noi dung 4</p>
+    </div>
+    <!-- lúc này thẻ p bên dưới đứng sau h1 không còn là thẻ p đầu tiên nữa và không có tác dụng -->
+    <h1>test p:first-child sau thẻ h1</h1>
+    <p>test 1</p>
+    <p>test 2</p>
+    <p>4.2 Phần tử lớp giả con :last-child ví dụ p:last-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con cuối cùng</p>
+    <p>4.3 Phần tử lớp giả con :nth-child ví dụ p:nth-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ trên xuống</p>
+    <body>4.4 Phần tử lớp giả con :nth-last-child ví dụ p:nth-last-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ dưới lên/p>
+    <p>4.4 Phần tử lớp giả con :only-child ví dụ p:only-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con duy nhất</p>
 </body>
 </html>

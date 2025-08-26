@@ -26,8 +26,8 @@
 /* .div_elm:empty {
   width: 200px;
   height: 200px;
-  background-color: blue; */
-}
+  background-color: blue;
+} */
 /* ví dưới thể hiện việc xóa lớp giả :empty đi và thêm nội dung text html vào thẻ thì phần selector sẽ chuyển qua màu vàng như dưới */
 /* .div_elm {
   width: 200px;
@@ -35,9 +35,11 @@
   background-color: rgb(213, 220, 25);
 } */
 /* Ví dụ này để test thay đổi khi click vào href mở bài, thân bài hoặc kết bài thì khi click vào href thì phần hash # tương ứng sẽ hiện màu xanh dương */
+
 h2:target{
     color: blue;
 }
+
 
 /* 4. ví dụ về các thẻ phần tử con child selector */
 p:first-child {
@@ -48,4 +50,8 @@ p:first-child {
 p:last-child {
     color: blue;
     font-size: 30px;
+}
+p:nth-child(2){
+  color: pink;
+  font-size: 30px;
 }
