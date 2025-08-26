@@ -7,33 +7,34 @@
     <title>Bai 33 CSS Pseudo-classes hover active</title>
 </head>
 <body>
-        <h1>Pseudo-classes (đặc trưng của pseudo luôn có dấu hai chấm : ）</h1>
-        <h3>Định nghĩa  Pseudo-classes (lớp giả)</h3>
-        <h4>
-            <strong>1. Định nghĩa</strong>
-        </h4>
-        <p>
-            Lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.
+    <h1>Pseudo-classes (đặc trưng của pseudo luôn có dấu hai chấm : )</h1>
+    <h3>Định nghĩa  Pseudo-classes (lớp giả)</h3>
+    <h4>
+        <strong>1. Định nghĩa</strong>
+    </h4>
+    <p>
+        Lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.
     
-    Ví dụ, nó có thể được sử dụng để:
+        Ví dụ, nó có thể được sử dụng để:
         <ol>
-    <li>Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó</li>
-    <li>Kiểu liên kết đã truy cập và chưa truy cập khác nhau</li>
-    <li>Tạo kiểu cho một phần tử khi nó được chú ý</li>
-    <li>Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn</li>
-    </ol>
-        </p>
+            <li>Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó</li>
+            <li>Kiểu liên kết đã truy cập và chưa truy cập khác nhau</li>
+            <li>Tạo kiểu cho một phần tử khi nó được chú ý</li>
+            <li>Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn</li>
+        </ol>
+    </p>
     <h4><strong>2. Cú pháp của pseudo-class (lớp giả)</strong></h4>
     <p style="color: blue;">
         selector:pseudo-class {property: value;}
     </p>
-    <ul style="a">
-    <li>:hover ví dụ: p:hover có nghĩa là chọn các thẻ &lt;p&gt; khi di chuột qua</li>
-    <li>:active ví dụ: a:active có nghĩa là chọn các thẻ &lt;a&gt; khi nhấn giữ chuột</li>
-    <li>:link ví dụ: a:link có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết chưa click vào</li>
-    <li>:visited ví dụ: a:visited có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết đã click truy vập</li>
-    <li>:empty ví dụ: div:link có nghĩa là chọn các thẻ &lt;div&gt; không có nội dung</li>
-    <li>:target ví dụ: #home:target có nghĩa là chọn các thẻ có id="home" khi trên URL có hash tương ứng. VD: htts:// domain.com/#home</li>
+    <!-- <ul style="a"> -->
+    <ul>
+        <li>:hover ví dụ: p:hover có nghĩa là chọn các thẻ &lt;p&gt; khi di chuột qua</li>
+        <li>:active ví dụ: a:active có nghĩa là chọn các thẻ &lt;a&gt; khi nhấn giữ chuột</li>
+        <li>:link ví dụ: a:link có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết chưa click vào</li>
+        <li>:visited ví dụ: a:visited có nghĩa là chọn các thẻ &lt;a&gt; có chứa liên kết đã click truy vập</li>
+        <li>:empty ví dụ: div:link có nghĩa là chọn các thẻ &lt;div&gt; không có nội dung</li>
+        <li>:target ví dụ: #home:target có nghĩa là chọn các thẻ có id="home" khi trên URL có hash tương ứng. VD: htts:// domain.com/#home</li>
     </ul>
     <h4>3. Ví dụ demo:</h4>
     <p>
@@ -46,30 +47,30 @@
     <p>
         3.2 Lớp giả :active chọn các thẻ &lt;a&gt; khi nhấn giữ chuột sẽ có sự thay đổi <br>
         <p class="di_chuot">Xin chào</p>
-    <p class="di_chuot">Hãy di chuột qua tôi</p>
-    <a href="https://chat.deepseek.com/" class="link">Click here</a>
+        <p class="di_chuot">Hãy di chuột qua tôi</p>
+        <a href="https://chat.deepseek.com/" class="link">Click here</a>
     </p>
     <P>
         3.3 Lớp giả :link ví dụ như a:link có nghĩa là chọn các thẻ &lt;a&gt; có liên kết chưa click vào <br>
         <p class="di_chuot">Xin chào</p>
-    <p class="di_chuot">Hãy di chuột qua tôi</p>
-    <p>dòng thứ n</p>
-    <p>dòng thứ n</p>
-    <p>dòng thứ n</p>
-     3.4 Lớp giả :visited ví dụ như a:visited có nghĩa là chọn các thẻ &lt;a&gt; có liên kết đã click truy cập<br>
-    <a href="https://chat.deepseek.com" class="Click_me" target="_blank"> Test :link</a> <br>
-    <a href="https://www.w3schools.com/" class="Click_me" target="_blank"> Test :link 2</a> <br>
-    (cách amet gõ nhanh thẻ a có class là class="click_me với tiêu để là Link link như sau: a.click_me{Link link}）
-    <br>
+        <p class="di_chuot">Hãy di chuột qua tôi</p>
+        <p>dòng thứ n</p>
+        <p>dòng thứ n</p>
+        <p>dòng thứ n</p>
+        3.4 Lớp giả :visited ví dụ như a:visited có nghĩa là chọn các thẻ &lt;a&gt; có liên kết đã click truy cập<br>
+        <a href="https://chat.deepseek.com" class="Click_me" target="_blank"> Test :link</a> <br>
+        <a href="https://www.w3schools.com/" class="Click_me" target="_blank"> Test :link 2</a> <br>
+        (cách amet gõ nhanh thẻ a có class là class="click_me với tiêu để là Link link như sau: a.click_me{Link link}）
+        <br>
     </P>
     <p>3.5 Lớp giả :empty ví dụ như div:empty có nghĩa là chọ các thẻ &lt;div&gt; không có nội dung<br>
     div là 1 thẻ phi hữu nghĩa, dùng để gom nhóm các phần tử html lại với nhau để thuận tiện trong việc quản lí giữa các phần tử. <br>
     Ví dụ: 
-    <p class="di_chuot">Hãy di chuột qua tôi</p>
-    <p>dòng thứ n</p>
-    <p>dòng thứ n</p>
-    <p>dòng thứ n</p>
-    <div class="div_elm">a</div> 
+        <p class="di_chuot">Hãy di chuột qua tôi</p>
+        <p>dòng thứ n</p>
+        <p>dòng thứ n</p>
+        <p>dòng thứ n</p>
+        <div class="div_elm">a</div> 
     </p>
     <p>3.6 Lớp giả :target ví dụ #home:target có nghĩa là chọn thẻ có id="home" khi trên URL có hash (dấu # đại diện cho ID) tương ứng.</p>
     <h1>Nỗ lực phi thường</h1>
@@ -112,12 +113,12 @@
         <p>Noi dung 4</p>
     </div>
     <!-- lúc này thẻ p bên dưới đứng sau h1 không còn là thẻ p đầu tiên nữa và không có tác dụng -->
-    <h1>test p:first-child sau thẻ h1</h1>
+    <h1>test p:first-child sau thẻ h1
     <p>test 1</p>
-    <p>test 2</p>
+    <p>test 2</p></h1>
     <p>4.2 Phần tử lớp giả con :last-child ví dụ p:last-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con cuối cùng</p>
     <p>4.3 Phần tử lớp giả con :nth-child ví dụ p:nth-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ trên xuống</p>
-    <body>4.4 Phần tử lớp giả con :nth-last-child ví dụ p:nth-last-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ dưới lên/p>
+    4.4 Phần tử lớp giả con :nth-last-child ví dụ p:nth-last-child(2) nghĩa là chọn các thẻ &lt;p&gt; là thẻ con thứ 2 tính từ dưới lên/p>
     <p>4.4 Phần tử lớp giả con :only-child ví dụ p:only-child nghĩa là chọn các thẻ &lt;p&gt; là thẻ con duy nhất</p>
 </body>
 </html>
