@@ -39,7 +39,6 @@ h2:target{
     color: blue;
 }
 
-
 /* 4. ví dụ về các thẻ phần tử con child selector */
 p:first-child {
     color: red;
