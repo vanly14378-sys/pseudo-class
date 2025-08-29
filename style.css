@@ -40,7 +40,6 @@
     color: blue;
 } */
 
-
 /* 4. ví dụ về các thẻ phần tử con child selector */
 /* p:first-child {
     color: red;
@@ -71,6 +70,64 @@ p:nth-child(even){
 n=0 -> 1
 n=1 -> 4
 n=2 -> 7 */
-p:nth-child(3n+1){
+/* p:nth-child(3n+1){
   color: orange;
+} */
+/* test các phần tử con p thứ 2 tính từ dưới lên */
+/* p:nth-last-child(2){
+  color: blue;
+} */
+/* test các phần tử con p lẻ
+p:nth-last-child(odd){
+  color: fuchsia;
+} */
+/* test các phần tử con p chẵn */
+/* p:nth-last-child(even){
+  color: mediumspringgreen;
+} */
+
+/* p:only-child{
+  color: blue;
+  font-size: 30px;
+} */
+
+/* test cho phần 5.1 */
+/* p:first-of-type{
+  color: blue;
+  font-size: 20px;
+} */
+
+/* test cho 5.2 phần tử con p:last-of-type */
+/* p:last-of-type {
+  color: red;
+  font-size: 20px;
+} */
+
+/* test cho phần 5.3 phần tử con p:nth-of-type(n) n=2 */
+/* p:nth-of-type(2){
+  color: blueviolet;
+  font-size: 30px;
+} */
+
+
+/* ví dụ thêm để so sánh 2 thẻ :only-child và :only-of-type */
+/* p:only-child{
+  color: chocolate;
+  font-size: 30px;
+} */
+/* Test thẻ :only-of-type cho thẻ con p nằm trong thẻ div và có thêm thẻ con khác là h4 */
+/* p:only-of-type {
+  color: rgb(209, 60, 147);
+  font-size: px;
+} */
+
+/* ví dụ cho thẻ phần tử :not(selector) phần 6 */
+/* .top:not(p){
+  color: chocolate;
+  background-color: bisque;
+} */
+
+/* ví dụ cho thẻ :not(selector) là thẻ :first-of-type bên trong */
+.top:not(:first-of-type){
+  background-color:darkkhaki;
 }
